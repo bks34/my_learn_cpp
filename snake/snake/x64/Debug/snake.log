@@ -1,0 +1,4 @@
+﻿  源.cpp
+D:\编程\visual studio 项目\c++\snake\snake\源.cpp(79,12): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
+D:\编程\visual studio 项目\c++\snake\snake\源.cpp(269): warning C4715: “check”: 不是所有的控件路径都返回值
+  snake.vcxproj -> D:\编程\visual studio 项目\c++\snake\x64\Debug\snake.exe

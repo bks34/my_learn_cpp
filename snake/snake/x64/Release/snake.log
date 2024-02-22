@@ -1,0 +1,5 @@
+﻿  snake.cpp
+  源.cpp
+D:\编程\visual studio 项目\c++\snake\snake\源.cpp(79,12): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
+MSVCRT.lib(exe_main.obj) : error LNK2001: 无法解析的外部符号 main
+D:\编程\visual studio 项目\c++\snake\x64\Release\snake.exe : fatal error LNK1120: 1 个无法解析的外部命令

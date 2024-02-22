@@ -1,0 +1,79 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C28251",
+          "message": {
+            "text": "“WinMain”的批注不一致: 此实例包含 无批注。请参见 c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\um\\winbase.h(1037)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/编程/visual studio 项目/c++/snake/snake/源.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WinMain",
+                  "decoratedName": "WinMain",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/编程/visual studio 项目/c++/snake/snake/源.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "2f13caabc77ffda7883c000ab221e70c4b8d7e21fbcaf1b54ffc5babb2f22865"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/编程/visual studio 项目/c++/snake/snake/resource.h"
+          },
+          "hashes": {
+            "sha-256": "49b770a8014577602cf98fac7f4be6a2b4c9f0c704bc752264a72edf71c4772c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/编程/visual studio 项目/c++/snake/snake/snake.h"
+          },
+          "hashes": {
+            "sha-256": "c566805d4dfaf7d10d844718a4b8f4b1a1dafa9893bf0c05808baa0877845660"
+          }
+        }
+      ]
+    }
+  ]
+}
