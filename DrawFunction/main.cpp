@@ -104,7 +104,7 @@ void DrawFunc(HWND hwnd, int o_x, int o_y, double step, char* func)
 		{
 			MoveToEx(hdc, i, o_y-0.1/step, 0);
 			LineTo(hdc, i, o_y + 0.1 / step);
-			int x = -1 * step * (i - o_x);
+			int x = 1 * step * (i - o_x);
 			char out[10];
 			_itoa(x, out, 10);
 			wchar_t w_out[12];
@@ -123,10 +123,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	static HWND hButtonML;
 	static HWND hButtonUp;
 	static HWND hButtonDown;
-	HDC hdc;
 	static RECT rect;
 	static int width, height;
-	PAINTSTRUCT ps;
 	int fLen = 0;
 	static bool IsPush = 0;
 	static int o_x, o_y;

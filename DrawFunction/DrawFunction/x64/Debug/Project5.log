@@ -1,14 +1,13 @@
 ﻿  main.cpp
-D:\code\test\Project5\main.cpp(64,12): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(88,22): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(89,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(90,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(96,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(96,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(105,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(106,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(107,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(112,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(112,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\Project5\main.cpp(129,14): warning C4101: “ps”: 未引用的局部变量
-  Project5.vcxproj -> D:\code\test\Project5\x64\Debug\DrawFunction.exe
+D:\code\test\DrawFunction\main.cpp(64,12): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(88,22): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(89,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(90,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(96,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(96,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(105,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(106,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(107,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(112,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(112,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  Project5.vcxproj -> D:\code\test\DrawFunction\x64\Debug\DrawFunction.exe
