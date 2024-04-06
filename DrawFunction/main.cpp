@@ -99,7 +99,7 @@ void DrawFunc(HWND hwnd, int o_x, int o_y, double step, char* func)
 	for (int i = 10; i < width-20; i++)
 	{
 		MoveToEx(hdc, i, (int)(-TransFunc(func, step *(i-o_x))/step)+o_y, NULL);
-		LineTo(hdc, i + 2,(int)(-TransFunc(func, step * (i + 1-o_x))/step)+o_y);
+		LineTo(hdc, i + 1,(int)(-TransFunc(func, step * (i + 1-o_x))/step)+o_y);
 		if (!((i - o_x)%(int)(1/step)))
 		{
 			MoveToEx(hdc, i, o_y-0.1/step, 0);
@@ -128,7 +128,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	int fLen = 0;
 	static bool IsPush = 0;
 	static int o_x, o_y;
-
 
 	switch (message)
 	{
@@ -159,7 +158,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			wcstombs(f, func, fLen + 1);
 			if (!Check(f))
 			{
-				SetWindowText(hEdit, TEXT("INPUT ERROR"));
+				SetWindowText(hEdit, TEXT("INPUT ERROR !!!"));
 				break;
 			}
 			IsPush = 1;

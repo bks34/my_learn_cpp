@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\code\\test\\DrawFunction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\TransFunc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:TransFunc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\TransFunc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +30,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TransFunc.cpp",
               "DocumentMoniker": "D:\\code\\test\\DrawFunction\\TransFunc.cpp",
               "RelativeDocumentMoniker": "TransFunc.cpp",
               "ToolTip": "D:\\code\\test\\DrawFunction\\TransFunc.cpp",
               "RelativeToolTip": "TransFunc.cpp",
-              "ViewState": "AQIAAJMBAAAAAAAAAADgv80BAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAM0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-06T13:21:36.176Z"
+              "WhenOpened": "2024-04-06T13:21:36.176Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -50,17 +51,18 @@
               "RelativeToolTip": "TransFunc.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-05T07:28:24.009Z"
+              "WhenOpened": "2024-04-05T07:28:24.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\code\\test\\DrawFunction\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\code\\test\\DrawFunction\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAQwGoAAAALAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAAKAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-04T11:35:29.584Z",
               "EditorCaption": ""
