@@ -3,6 +3,16 @@
 
 using namespace std;
 
+bool Check(char* f)
+{
+	for (int i = 0; i < strlen(f); i++)
+	{
+		if (!(isnum(f[i]) || (f[i] >= '#' && f[i] <= '/') || (f[i] >= 'a' && f[i] <= 'z')||(f[i]=='^')))
+			return false;
+	}
+	return true;
+}
+
 int prio(char op1,char op2)
 {
 	int res = 0;

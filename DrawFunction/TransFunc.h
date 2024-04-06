@@ -3,6 +3,8 @@
 #include<stack>
 #include<string.h>
 
+bool Check(char* f);
+
 int prio(char op1,char op2);
 bool isnum(char n);
 bool isconst(char c);

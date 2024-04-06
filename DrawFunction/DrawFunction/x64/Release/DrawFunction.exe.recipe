@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\code\test\Project5\x64\Release\DrawFunction.exe</FullPath>
+      <FullPath>D:\code\test\DrawFunction\x64\Release\DrawFunction.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

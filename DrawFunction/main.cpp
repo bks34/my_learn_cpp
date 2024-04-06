@@ -154,13 +154,19 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		{
 		case 1:
 			fLen = GetWindowText(hEdit, func, sizeof(func));
+			if (!fLen)
+				break;
+			
 			func[fLen] = 0;
 			wcstombs(f, func, fLen + 1);
-			hdc = GetDC(hwnd);
-			SelectObject(hdc, GetStockObject(SYSTEM_FIXED_FONT));
-			TextOut(hdc, 100, height/4, func,fLen);
-			ReleaseDC(hwnd, hdc);	
+			if (!Check(f))
+			{
+				SetWindowText(hEdit, TEXT("INPUT ERROR"));
+				break;
+			}
 			IsPush = 1;
+			o_x = width / 2;
+			o_y = 5 * height / 8;
 			InvalidateRect(hwnd, NULL, true);
 			break;
 
@@ -194,12 +200,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		width = rect.right - rect.left;
 		height = rect.bottom - rect.top;
 		
-		UpdateWindow(hButtonPaint);
-		UpdateWindow(hEdit);
-		UpdateWindow(hButtonMR);
-		UpdateWindow(hButtonML);
-		UpdateWindow(hButtonUp);
-		UpdateWindow(hButtonDown);
+		InvalidateRect(hwnd, NULL, true);
 		return 0;
 	}
 	case WM_PAINT:
