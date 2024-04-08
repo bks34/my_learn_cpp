@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:TransFunc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:README.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -22,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.txt",
+              "DocumentMoniker": "D:\\code\\test\\DrawFunction\\README.txt",
+              "RelativeDocumentMoniker": "README.txt",
+              "ToolTip": "D:\\code\\test\\DrawFunction\\README.txt",
+              "RelativeToolTip": "README.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-08T12:20:06.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\code\\test\\DrawFunction\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\code\\test\\DrawFunction\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-08T12:17:44.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,35 +66,22 @@
               "RelativeDocumentMoniker": "TransFunc.cpp",
               "ToolTip": "D:\\code\\test\\DrawFunction\\TransFunc.cpp",
               "RelativeToolTip": "TransFunc.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAM0BAAAAAAAA",
+              "ViewState": "AQIAANQBAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-06T13:21:36.176Z",
+              "WhenOpened": "2024-04-08T12:17:41.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TransFunc.h",
               "DocumentMoniker": "D:\\code\\test\\DrawFunction\\TransFunc.h",
               "RelativeDocumentMoniker": "TransFunc.h",
               "ToolTip": "D:\\code\\test\\DrawFunction\\TransFunc.h",
               "RelativeToolTip": "TransFunc.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-05T07:28:24.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\code\\test\\DrawFunction\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\code\\test\\DrawFunction\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAAAKAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-04T11:35:29.584Z",
+              "WhenOpened": "2024-04-08T12:17:38.091Z",
               "EditorCaption": ""
             }
           ]
