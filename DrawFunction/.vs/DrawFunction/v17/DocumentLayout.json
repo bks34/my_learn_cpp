@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\code\\test\\DrawFunction\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\TransFunc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:TransFunc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:README.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F44C0CCF-B778-44F2-BA14-A70B702EBA7E}|Project5.vcxproj|D:\\code\\test\\DrawFunction\\TransFunc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "README.txt",
               "DocumentMoniker": "D:\\code\\test\\DrawFunction\\README.txt",
               "RelativeDocumentMoniker": "README.txt",
@@ -42,31 +42,30 @@
               "RelativeToolTip": "README.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-08T12:20:06.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T12:20:06.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\code\\test\\DrawFunction\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\code\\test\\DrawFunction\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAAAOwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-08T12:17:44.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TransFunc.cpp",
               "DocumentMoniker": "D:\\code\\test\\DrawFunction\\TransFunc.cpp",
               "RelativeDocumentMoniker": "TransFunc.cpp",
               "ToolTip": "D:\\code\\test\\DrawFunction\\TransFunc.cpp",
               "RelativeToolTip": "TransFunc.cpp",
-              "ViewState": "AQIAANQBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAALoBAAAAAAAAAAAAAMcBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-08T12:17:41.757Z",
               "EditorCaption": ""
@@ -81,8 +80,7 @@
               "RelativeToolTip": "TransFunc.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T12:17:38.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T12:17:38.091Z"
             }
           ]
         },
