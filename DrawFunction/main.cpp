@@ -10,7 +10,7 @@
 wchar_t func[MAX_BF_SZIE];
 char f[MAX_BF_SZIE];
 
-double step = 0.01;
+static double step = 0.01;
 
 void DrawFunc(HWND hwnd, int o_x, int o_y, double step,double inf,double sup, char* func);
 
@@ -130,6 +130,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	static HWND hButtonUp;
 	static HWND hButtonDown;
 	static HWND hButtonO;
+	static HWND hButtonClear;
 
 	static HWND hRangeMin;
 	static HWND hRangeMax;
@@ -159,17 +160,18 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		seePosX = o_x;
 		inf = (seePosX - o_x - width) * step;
 		sup = (seePosX - o_x + width) * step;
-		
-		hButtonPaint = CreateWindow(TEXT("button"), TEXT("paint"), WS_CHILD | WS_VISIBLE |BS_PUSHBUTTON, width/100, height/8, 50, height/32, hwnd, (HMENU)1, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hEdit=CreateWindow(TEXT("edit"), TEXT("Please enter function"), WS_CHILD | WS_VISIBLE| WS_BORDER,width / 100, height / 16, width/2, height / 32,hwnd, (HMENU)0, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hRangeMin= CreateWindow(TEXT("edit"), TEXT("inf"), WS_CHILD | WS_VISIBLE | WS_BORDER, width / 8, height / 8, width / 16, height / 32, hwnd, (HMENU)6, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+
+		hButtonPaint = CreateWindow(TEXT("button"), TEXT("paint"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, width / 100, height / 8, 50, height / 32, hwnd, (HMENU)1, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hEdit = CreateWindow(TEXT("edit"), TEXT("Please enter function"), WS_CHILD | WS_VISIBLE | WS_BORDER, width / 100, height / 16, width / 2, height / 32, hwnd, (HMENU)0, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hRangeMin = CreateWindow(TEXT("edit"), TEXT("inf"), WS_CHILD | WS_VISIBLE | WS_BORDER, width / 8, height / 8, width / 16, height / 32, hwnd, (HMENU)6, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
 		hRangeMax = CreateWindow(TEXT("edit"), TEXT("sup"), WS_CHILD | WS_VISIBLE | WS_BORDER, width / 4, height / 8, width / 16, height / 32, hwnd, (HMENU)6, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hButtonUseRange = CreateWindow(TEXT("button"), TEXT("Use Range"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 3*width/8, height / 8, 100, height / 32, hwnd, (HMENU)7, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hButtonMR = CreateWindow(TEXT("button"), TEXT("R"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 80*width / 100, height / 8, 50, height / 32, hwnd, (HMENU)2, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hButtonML = CreateWindow(TEXT("button"), TEXT("L"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 60*width / 100, height / 8, 50, height / 32, hwnd, (HMENU)3, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hButtonUseRange = CreateWindow(TEXT("button"), TEXT("Use Range"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 3 * width / 8, height / 8, 100, height / 32, hwnd, (HMENU)7, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hButtonMR = CreateWindow(TEXT("button"), TEXT("R"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 80 * width / 100, height / 8, 50, height / 32, hwnd, (HMENU)2, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hButtonML = CreateWindow(TEXT("button"), TEXT("L"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 60 * width / 100, height / 8, 50, height / 32, hwnd, (HMENU)3, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
 		hButtonUp = CreateWindow(TEXT("button"), TEXT("Up"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 70 * width / 100, height / 16, 50, height / 32, hwnd, (HMENU)4, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hButtonDown = CreateWindow(TEXT("button"), TEXT("Down"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 70 * width / 100, 3*height / 16, 50, height / 32, hwnd, (HMENU)5, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
-		hButtonO= CreateWindow(TEXT("button"), TEXT("O"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 70 * width / 100, height / 8, 50, height / 32, hwnd, (HMENU)8, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hButtonDown = CreateWindow(TEXT("button"), TEXT("Down"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 70 * width / 100, 3 * height / 16, 50, height / 32, hwnd, (HMENU)5, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hButtonO = CreateWindow(TEXT("button"), TEXT("O"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 70 * width / 100, height / 8, 50, height / 32, hwnd, (HMENU)8, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+		hButtonClear = CreateWindow(TEXT("button"), TEXT("clear"), WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 90 * width / 100, height / 8, 50, height / 32, hwnd, (HMENU)9, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
 		fLen = GetWindowText(hEdit, func, sizeof(func));
 		func[fLen] = 0;
 		wcstombs(f, func, fLen + 1);
@@ -182,7 +184,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			fLen = GetWindowText(hEdit, func, sizeof(func));
 			if (!fLen)
 				break;
-			
+
 			func[fLen] = 0;
 			wcstombs(f, func, fLen + 1);
 			if (!Check(f))
@@ -190,9 +192,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				SetWindowText(hEdit, TEXT("INPUT ERROR !!!"));
 				break;
 			}
-			
+
 			IsPush = 1;
-			InvalidateRect(hwnd, NULL,true);
+			InvalidateRect(hwnd, NULL, false);
 			break;
 
 		case 2:
@@ -213,7 +215,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			break;
 		case 7:
 			useRange = !useRange;
-			if(useRange)
+			if (useRange)
 				SetWindowText(hButtonUseRange, TEXT("Not Use"));
 			else
 				SetWindowText(hButtonUseRange, TEXT("Use Range"));
@@ -223,6 +225,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			o_x = width / 2;
 			o_y = 5 * height / 8;
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
+			break;
+		case 9:
+			InvalidateRect(hwnd, NULL, true);
 			break;
 
 		default:
@@ -248,6 +253,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		UpdateWindow(hRangeMin);
 		UpdateWindow(hRangeMax);
 		UpdateWindow(hButtonUseRange);
+		UpdateWindow(hButtonClear);
 
 		inf = (seePosX - o_x - width) * step;
 		sup = (seePosX - o_x + width) * step;
@@ -262,7 +268,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			w_supBuf[supBufLen] = 0;
 			wcstombs(supBuf, w_supBuf, supBufLen + 1);
 			sup = atof(supBuf);
+			step = (sup - inf) / 500;
 		}
+		else
+			step = 0.01;
 
 		if (IsPush)
 		{

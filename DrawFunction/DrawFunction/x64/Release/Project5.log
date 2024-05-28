@@ -1,17 +1,15 @@
 ﻿  main.cpp
-D:\code\test\DrawFunction\main.cpp(64,12): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(88,22): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(89,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(90,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(96,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(96,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(105,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(106,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(107,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(112,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(112,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(126,6): warning C4101: “hdc”: 未引用的局部变量
-D:\code\test\DrawFunction\main.cpp(129,14): warning C4101: “ps”: 未引用的局部变量
+D:\code\test\DrawFunction\main.cpp(66,12): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(90,22): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(91,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(92,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(98,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(98,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(111,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(112,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(113,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(118,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(118,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
   正在生成代码
   2 of 195 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
