@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\code\\test\\DrawFunction\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAAABEBAAAPAAAA",
+              "ViewState": "AQIAAPoAAAAAAAAAAADwvxQBAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-08T12:17:44.508Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "TransFunc.cpp",
               "ViewState": "AQIAAMwBAAAAAAAAAAAAAMcBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-08T12:17:41.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T12:17:41.757Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "TransFunc.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T12:17:38.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T12:17:38.091Z"
             }
           ]
         },

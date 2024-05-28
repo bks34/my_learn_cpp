@@ -10,7 +10,7 @@
 wchar_t func[MAX_BF_SZIE];
 char f[MAX_BF_SZIE];
 
-static double step = 0.01;
+static double step = 0.005;
 
 void DrawFunc(HWND hwnd, int o_x, int o_y, double step,double inf,double sup, char* func);
 
@@ -143,6 +143,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	static int o_x, o_y;
 	static int seePosX;
 	static bool useRange = 0;
+	static bool StepIsSet = 0;
 	static double inf, sup;
 	wchar_t w_infBuf[20], w_supBuf[20];
 	static char infBuf[20], supBuf[20];
@@ -227,6 +228,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 9:
+			StepIsSet = 0;
+			step = 0.005;
 			InvalidateRect(hwnd, NULL, true);
 			break;
 
@@ -268,11 +271,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			w_supBuf[supBufLen] = 0;
 			wcstombs(supBuf, w_supBuf, supBufLen + 1);
 			sup = atof(supBuf);
-			step = (sup - inf) / 500;
+			if (!StepIsSet)
+			{
+				step = (sup - inf) / 500;
+				StepIsSet = true;
+			}
 		}
-		else
-			step = 0.01;
-
+		
 		if (IsPush)
 		{
 			DrawFunc(hwnd, o_x, o_y, step, inf, sup, f);
