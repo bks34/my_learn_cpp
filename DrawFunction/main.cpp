@@ -110,7 +110,8 @@ void DrawFunc(HWND hwnd, int o_x, int o_y, double step, double inf, double sup, 
 		{
 			MoveToEx(hdc, i, o_y-0.1/step, 0);
 			LineTo(hdc, i, o_y + 0.1 / step);
-			int x = 1 * step * (i - o_x);
+			double x_pre = step * (double)(i - o_x);
+			int x = (double)(x_pre - (int)x_pre) > 0.5 ? (int)x_pre + 1 : (int)x_pre;//Àƒ…·ŒÂ»Î
 			char out[10];
 			_itoa(x, out, 10);
 			wchar_t w_out[12];
@@ -200,18 +201,22 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 		case 2:
 			o_x -= width / 4;
+			SendMessage(hwnd, WM_COMMAND, 9, NULL);
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 3:
 			o_x += width / 4;
+			SendMessage(hwnd, WM_COMMAND, 9, NULL);
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 4:
 			o_y += height / 4;
+			SendMessage(hwnd, WM_COMMAND, 9, NULL);
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 5:
 			o_y -= height / 4;
+			SendMessage(hwnd, WM_COMMAND, 9, NULL);
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 7:
@@ -220,11 +225,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				SetWindowText(hButtonUseRange, TEXT("Not Use"));
 			else
 				SetWindowText(hButtonUseRange, TEXT("Use Range"));
+			SendMessage(hwnd, WM_COMMAND, 9, NULL);
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 8:
 			o_x = width / 2;
 			o_y = 5 * height / 8;
+			SendMessage(hwnd, WM_COMMAND, 9, NULL);
 			SendMessage(hwnd, WM_COMMAND, 1, NULL);
 			break;
 		case 9:

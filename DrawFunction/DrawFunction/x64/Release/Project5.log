@@ -7,11 +7,10 @@ D:\code\test\DrawFunction\main.cpp(98,50): warning C4267: “参数”: 从“si
 D:\code\test\DrawFunction\main.cpp(98,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
 D:\code\test\DrawFunction\main.cpp(111,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
 D:\code\test\DrawFunction\main.cpp(112,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(113,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(118,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\code\test\DrawFunction\main.cpp(118,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(119,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\test\DrawFunction\main.cpp(119,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
   正在生成代码
-  2 of 195 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+  0 of 195 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
