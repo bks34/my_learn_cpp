@@ -1,0 +1,6 @@
+﻿  Judge_odd_even.cpp
+D:\code\visual_studio_project\c++\TwoLayerNet\TwoLayerNet\Judge_odd_even.cpp(23,11): warning C4476: "printf": 格式说明符中的类型字段字符“\xe7”未知
+D:\code\visual_studio_project\c++\TwoLayerNet\TwoLayerNet\Judge_odd_even.cpp(25,11): warning C4476: "printf": 格式说明符中的类型字段字符“\xe7”未知
+  TwoLayerNet.cpp
+  正在生成代码...
+  TwoLayerNet.vcxproj -> D:\code\visual_studio_project\c++\TwoLayerNet\TwoLayerNet\x64\Debug\TwoLayerNet.exe
